@@ -50,7 +50,7 @@ int main(void){
 			initArray();
 		}
 
-		// Sends gameArray to FPGA, gets keypad data, updates pacman and ghost info, and resets ai array
+		// Sends gameArray to FPGA, gets keypad data, updates pacman and ghost info.
 		char received = sendCurrentGameArray(gameArray);
 		getPacmanInfo(gameArray,received);
 		getGhostInfo(gameArray);
@@ -58,8 +58,9 @@ int main(void){
 		if (isAlive(gameArray)){
 			if (cycles > waitTime) {
 				cycles = 0;
+				// Resets aiArray
 				resetAIArray();
-				//Game logic for pacman
+				// Game logic for movement of ghosts and pacman; increase the ghost timer.
 				if (ghostCanMove(ghostInfo)){
 					while ( updateAIArray(pacmanInfo.row,pacmanInfo.col) ){
 						updateGhostDirection(randomness);
