@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6E22) Path("C:/Users/kkaneshina/Desktop/mp_finalProject_kk_gq/mp_finalProject_kk_gq/output_files/") File("e155_pacman.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE6) Path("C:/Users/kkaneshina/Desktop/mp_finalProject_kk_gq/") File("Final.jic") MfrSpec(OpMask(1) SEC_Device(EPCQ16) Child_OpMask(1 1));
 
 ChainEnd;
 

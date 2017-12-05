@@ -1,5 +1,5 @@
 Analysis & Synthesis report for e155_pacman
-Sat Nov 18 23:38:13 2017
+Sat Dec 02 18:33:40 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -47,16 +47,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Nov 18 23:38:13 2017           ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec 02 18:33:40 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; e155_pacman                                     ;
 ; Top-level Entity Name              ; e155_pacman                                     ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 94                                              ;
-;     Total combinational functions  ; 92                                              ;
-;     Dedicated logic registers      ; 67                                              ;
-; Total registers                    ; 67                                              ;
-; Total pins                         ; 37                                              ;
+; Total logic elements               ; 89                                              ;
+;     Total combinational functions  ; 81                                              ;
+;     Dedicated logic registers      ; 70                                              ;
+; Total registers                    ; 70                                              ;
+; Total pins                         ; 30                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -162,16 +162,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                               ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                           ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------+---------+
-; matrix.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/kkaneshina/Desktop/mp_finalProject_kk_gq/mp_finalProject_kk_gq/matrix.sv      ;         ;
-; e155_pacman.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/kkaneshina/Desktop/mp_finalProject_kk_gq/mp_finalProject_kk_gq/e155_pacman.sv ;         ;
-; spi_pi_fpga.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/kkaneshina/Desktop/mp_finalProject_kk_gq/mp_finalProject_kk_gq/spi_pi_fpga.sv ;         ;
-; keypad.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/kkaneshina/Desktop/mp_finalProject_kk_gq/mp_finalProject_kk_gq/keypad.sv      ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                     ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------+---------+
+; matrix.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/kkaneshina/Desktop/mp_finalProject_kk_gq/matrix.sv      ;         ;
+; e155_pacman.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/kkaneshina/Desktop/mp_finalProject_kk_gq/e155_pacman.sv ;         ;
+; spi_pi_fpga.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/kkaneshina/Desktop/mp_finalProject_kk_gq/spi_pi_fpga.sv ;         ;
+; keypad.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/kkaneshina/Desktop/mp_finalProject_kk_gq/keypad.sv      ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -179,28 +179,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 94        ;
+; Estimated Total logic elements              ; 89        ;
 ;                                             ;           ;
-; Total combinational functions               ; 92        ;
+; Total combinational functions               ; 81        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 27        ;
-;     -- 3 input functions                    ; 13        ;
-;     -- <=2 input functions                  ; 52        ;
+;     -- 4 input functions                    ; 20        ;
+;     -- 3 input functions                    ; 12        ;
+;     -- <=2 input functions                  ; 49        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 57        ;
-;     -- arithmetic mode                      ; 35        ;
+;     -- normal mode                          ; 47        ;
+;     -- arithmetic mode                      ; 34        ;
 ;                                             ;           ;
-; Total registers                             ; 67        ;
-;     -- Dedicated logic registers            ; 67        ;
+; Total registers                             ; 70        ;
+;     -- Dedicated logic registers            ; 70        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 37        ;
+; I/O pins                                    ; 30        ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 32        ;
-; Total fan-out                               ; 479       ;
-; Average fan-out                             ; 2.06      ;
+; Total fan-out                               ; 432       ;
+; Average fan-out                             ; 2.05      ;
 +---------------------------------------------+-----------+
 
 
@@ -209,12 +209,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
 ; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Library Name ;
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
-; |e155_pacman                 ; 92 (7)            ; 67 (0)       ; 0           ; 0            ; 0       ; 0         ; 37   ; 0            ; |e155_pacman                              ; work         ;
+; |e155_pacman                 ; 81 (1)            ; 70 (0)       ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |e155_pacman                              ; work         ;
 ;    |keypad:keypad|           ; 52 (19)           ; 41 (5)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |e155_pacman|keypad:keypad                ; work         ;
 ;       |flopenr:flop1|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |e155_pacman|keypad:keypad|flopenr:flop1  ; work         ;
 ;       |oscillator:slw|       ; 33 (33)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |e155_pacman|keypad:keypad|oscillator:slw ; work         ;
-;    |matrix:matrix|           ; 21 (21)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |e155_pacman|matrix:matrix                ; work         ;
-;    |spi_pi_fpga:spi_pi_fpga| ; 12 (12)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |e155_pacman|spi_pi_fpga:spi_pi_fpga      ; work         ;
+;    |matrix:matrix|           ; 15 (15)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |e155_pacman|matrix:matrix                ; work         ;
+;    |spi_pi_fpga:spi_pi_fpga| ; 13 (13)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |e155_pacman|spi_pi_fpga:spi_pi_fpga      ; work         ;
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -233,18 +233,15 @@ Encoding Type:  One-Hot
 +----------+----------+----------+----------+----------+----------+
 
 
-+---------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                        ;
-+---------------------------------------+-----------------------------------+
-; Register name                         ; Reason for Removal                ;
-+---------------------------------------+-----------------------------------+
-; matrix:matrix|RGB2[0]                 ; Merged with matrix:matrix|RGB1[0] ;
-; matrix:matrix|RGB2[1]                 ; Merged with matrix:matrix|RGB1[1] ;
-; matrix:matrix|RGB2[2]                 ; Merged with matrix:matrix|RGB1[2] ;
-; keypad:keypad|state~4                 ; Lost fanout                       ;
-; keypad:keypad|state~5                 ; Lost fanout                       ;
-; Total Number of Removed Registers = 5 ;                                   ;
-+---------------------------------------+-----------------------------------+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; keypad:keypad|state~4                 ; Lost fanout        ;
+; keypad:keypad|state~5                 ; Lost fanout        ;
+; Total Number of Removed Registers = 2 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -252,12 +249,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 67    ;
-; Number of registers using Synchronous Clear  ; 8     ;
+; Total registers                              ; 70    ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 12    ;
+; Number of registers using Asynchronous Clear ; 27    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -267,8 +264,6 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |e155_pacman|matrix:matrix|RGB1[0]   ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |e155_pacman|matrix:matrix|rowD[0]   ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |e155_pacman|keypad:keypad|Selector1 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
 
@@ -293,13 +288,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "spi_pi_fpga:spi_pi_fpga"                                                                                                                 ;
-+------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                   ;
-+------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
-; d    ; Input ; Warning  ; Input port expression (4 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "d[7..4]" will be connected to GND. ;
-+------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "spi_pi_fpga:spi_pi_fpga"                                                                                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; d    ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "d[7..4]" will be connected to GND. ;
+; q[7] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
+; q[3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -317,7 +314,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Nov 18 23:38:12 2017
+    Info: Processing started: Sat Dec 02 18:33:39 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mp_finalProject_kk_gq -c e155_pacman
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file matrix.sv
@@ -333,32 +330,23 @@ Info (12021): Found 3 design units, including 3 entities, in source file keypad.
 Info (12021): Found 1 design units, including 1 entities, in source file mem.sv
     Info (12023): Found entity 1: mem
 Info (12127): Elaborating entity "e155_pacman" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at e155_pacman.sv(29): truncated value with size 32 to match size of target (10)
-Warning (10034): Output port "RGB1bus" at e155_pacman.sv(14) has no driver
-Warning (10034): Output port "done" at e155_pacman.sv(13) has no driver
 Info (12128): Elaborating entity "keypad" for hierarchy "keypad:keypad"
 Info (12128): Elaborating entity "oscillator" for hierarchy "keypad:keypad|oscillator:slw"
 Info (12128): Elaborating entity "flopenr" for hierarchy "keypad:keypad|flopenr:flop1"
 Info (12128): Elaborating entity "spi_pi_fpga" for hierarchy "spi_pi_fpga:spi_pi_fpga"
 Info (12128): Elaborating entity "matrix" for hierarchy "matrix:matrix"
-Warning (10230): Verilog HDL assignment warning at matrix.sv(25): truncated value with size 32 to match size of target (4)
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "done" is stuck at GND
-    Warning (13410): Pin "RGB1bus[0]" is stuck at GND
-    Warning (13410): Pin "RGB1bus[1]" is stuck at GND
-    Warning (13410): Pin "RGB1bus[2]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 136 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 124 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 99 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 476 megabytes
-    Info: Processing ended: Sat Nov 18 23:38:13 2017
+    Info (21059): Implemented 22 output pins
+    Info (21061): Implemented 94 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 512 megabytes
+    Info: Processing ended: Sat Dec 02 18:33:40 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

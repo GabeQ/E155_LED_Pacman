@@ -10,7 +10,6 @@ module keypad(input logic clk, reset,
 	logic [3:0]next_to_display;
 	//set desired frequency
 	oscillator #(53687) slw(clk, freq);
-	
 	//assign pressed var if any input is high
 	assign press = row[0] | row[1] | row[2] | row[3];
 				

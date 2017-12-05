@@ -1,5 +1,5 @@
 Flow report for e155_pacman
-Sat Nov 18 23:38:24 2017
+Sat Dec 02 18:33:50 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sat Nov 18 23:38:24 2017           ;
+; Flow Status                        ; Successful - Sat Dec 02 18:33:50 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; e155_pacman                                     ;
 ; Top-level Entity Name              ; e155_pacman                                     ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE6E22C8                                     ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 93 / 6,272 ( 1 % )                              ;
-;     Total combinational functions  ; 92 / 6,272 ( 1 % )                              ;
-;     Dedicated logic registers      ; 67 / 6,272 ( 1 % )                              ;
-; Total registers                    ; 67                                              ;
-; Total pins                         ; 37 / 92 ( 40 % )                                ;
+; Total logic elements               ; 90 / 6,272 ( 1 % )                              ;
+;     Total combinational functions  ; 81 / 6,272 ( 1 % )                              ;
+;     Dedicated logic registers      ; 70 / 6,272 ( 1 % )                              ;
+; Total registers                    ; 70                                              ;
+; Total pins                         ; 30 / 92 ( 33 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/18/2017 23:38:12 ;
+; Start date & time ; 12/02/2017 18:33:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; e155_pacman         ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 22759552399980.151107709217052        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 22759552389516.151226841913628        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)       ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
@@ -95,12 +95,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 466 MB              ; 00:00:01                           ;
-; Fitter                    ; 00:00:03     ; 1.0                     ; 777 MB              ; 00:00:04                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 425 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 494 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 396 MB              ; 00:00:00                           ;
-; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:08                           ;
+; Analysis & Synthesis      ; 00:00:00     ; 1.0                     ; 502 MB              ; 00:00:01                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 808 MB              ; 00:00:04                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 460 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 525 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 431 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:09                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,11 +109,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; Eng-B185-C       ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; Eng-B185-C       ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; Eng-B185-C       ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; Eng-B185-C       ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Eng-B185-C       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; Eng-B185-K       ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; Eng-B185-K       ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; Eng-B185-K       ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Eng-B185-K       ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Eng-B185-K       ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

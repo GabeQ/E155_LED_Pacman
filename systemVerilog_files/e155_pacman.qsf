@@ -72,7 +72,6 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_location_assignment PIN_65 -to sck
 set_location_assignment PIN_64 -to miso
 set_location_assignment PIN_60 -to mosi
-set_location_assignment PIN_59 -to CE
 set_global_assignment -name SYSTEMVERILOG_FILE matrix.sv
 set_global_assignment -name SYSTEMVERILOG_FILE e155_pacman.sv
 set_global_assignment -name SYSTEMVERILOG_FILE spi_pi_fpga.sv
@@ -91,12 +90,4 @@ set_location_assignment PIN_34 -to rowD[2]
 set_location_assignment PIN_33 -to rowD[1]
 set_location_assignment PIN_32 -to rowD[0]
 set_global_assignment -name SYSTEMVERILOG_FILE mem.sv
-set_location_assignment PIN_50 -to done
-set_location_assignment PIN_51 -to RGB1bus[2]
-set_location_assignment PIN_52 -to RGB1bus[1]
-set_location_assignment PIN_53 -to RGB1bus[0]
-set_location_assignment PIN_54 -to data[2]
-set_location_assignment PIN_55 -to data[1]
-set_location_assignment PIN_58 -to data[0]
-set_location_assignment PIN_49 -to start
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

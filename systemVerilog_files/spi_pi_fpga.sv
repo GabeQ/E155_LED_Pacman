@@ -7,9 +7,10 @@ module spi_pi_fpga(input logic		sck,			//From master
 					    output logic		miso,			//To master
 					    input logic		reset,		//System reset
 					    input logic     [7:0]d, 		//Data to send
-					    output logic    [7:0]q);		//Data received
+					    output logic    [7:0]q,
+						 output logic [2:0] cnt);		//Data received
 		
-	logic [2:0]cnt;
+	//logic [2:0]cnt;
 	logic qdelayed;
 
 	//3-bit counter tracks when full byte is trasmitted
