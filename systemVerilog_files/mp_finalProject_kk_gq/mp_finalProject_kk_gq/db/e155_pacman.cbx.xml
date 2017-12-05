@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="e155_pacman">
+		<CBX_INST_ENTRY INSTANCE_NAME="|e155_pacman|mem:memory|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_8c81.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

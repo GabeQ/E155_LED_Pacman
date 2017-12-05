@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'sck'
+Slack : -3.140
+TNS   : -52.760
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.121
+TNS   : -62.286
+
+Type  : Slow 1200mV 85C Model Setup 'keypad:keypad|oscillator:slw|k[31]'
+Slack : -2.094
+TNS   : -10.036
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.096
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'sck'
+Slack : 0.222
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'keypad:keypad|oscillator:slw|k[31]'
+Slack : 0.508
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -50.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sck'
+Slack : -3.000
+TNS   : -41.662
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'keypad:keypad|oscillator:slw|k[31]'
+Slack : -1.487
+TNS   : -13.383
+
+Type  : Slow 1200mV 0C Model Setup 'sck'
+Slack : -3.046
+TNS   : -48.883
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.649
+TNS   : -51.911
+
+Type  : Slow 1200mV 0C Model Setup 'keypad:keypad|oscillator:slw|k[31]'
+Slack : -1.831
+TNS   : -8.724
+
+Type  : Slow 1200mV 0C Model Hold 'sck'
+Slack : 0.077
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.212
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'keypad:keypad|oscillator:slw|k[31]'
+Slack : 0.470
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -50.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sck'
+Slack : -3.000
+TNS   : -41.662
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'keypad:keypad|oscillator:slw|k[31]'
+Slack : -1.487
+TNS   : -13.383
+
+Type  : Fast 1200mV 0C Model Setup 'sck'
+Slack : -1.061
+TNS   : -12.668
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.828
+TNS   : -10.100
+
+Type  : Fast 1200mV 0C Model Setup 'keypad:keypad|oscillator:slw|k[31]'
+Slack : -0.331
+TNS   : -1.324
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.105
+TNS   : -0.105
+
+Type  : Fast 1200mV 0C Model Hold 'sck'
+Slack : 0.058
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'keypad:keypad|oscillator:slw|k[31]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -37.180
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sck'
+Slack : -3.000
+TNS   : -34.594
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'keypad:keypad|oscillator:slw|k[31]'
+Slack : -1.000
+TNS   : -9.000
+
+------------------------------------------------------------

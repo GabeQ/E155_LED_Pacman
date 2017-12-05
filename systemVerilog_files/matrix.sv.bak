@@ -1,0 +1,20 @@
+//microps project to drive LED Matrix
+//Created by Kai Kaneshina and Gabriel Quiroz
+module Matrix(input logic clk, reset,
+			output logic [2:0] RGB1, RGB2, 
+			output logic [3:0] rowD,
+			output logic freq1,
+			output logic LAT,OE);
+// RGB1[2:0]: R1=RGB1[2], G1=RGB1[1], B1=RBG1[0]
+// RGB2[2:0]: R2=RGB2[2], G2=RGB2[1], B1=2=RBG2[0] 
+//	rowD[3:0]: A = rowD[3], B=rowD[2], C=rowD[1], D=rowD[0]
+	oscillator slow #(200)(clk,freq1);
+	always_comb
+		if (reset) OE=1;
+		else begin 
+			RGB1=3'b100;
+			RGB2=3'b010
+			end 
+			
+			
+endmodule 
