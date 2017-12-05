@@ -35,6 +35,7 @@ int waitTime = 25;
 int lives = 6;
 int ghostTimer = 0;
 int randomness = 5;
+int counter = 0;
 
 // Array with the eight chars that represent colors
 char difChar[8] = {'W', 'F', 'I', 'P', 'E', 'G', 'L', 'K'};
@@ -233,7 +234,7 @@ void resetPacmanInfo(){
 	pacmanInfo.row = 21;
 	pacmanInfo.col = 15;
 	pacmanInfo.block = 'E';
-	map[pacmanInfo.row][pacmanInfo.col] = 'P';
+	gameArray[pacmanInfo.row][pacmanInfo.col] = 'P';
 }
 
 
@@ -243,7 +244,7 @@ void resetGhostInfo(){
 	ghostInfo.block = 'W';
 	ghostInfo.row = 14;
 	ghostInfo.col = 15;
-	map[ghostInfo.row][ghostInfo.col] = 'G';
+	gameArray[ghostInfo.row][ghostInfo.col] = 'G';
 }
 
 // Updates pacman's current data (including position and direction).

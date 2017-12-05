@@ -1,7 +1,7 @@
 /* C file which contains the main function that will run the pacman game from the pi*/
 
 
-#include "gameplay6.c"
+#include "gameplayFinal.c"
 #include "EasyPIO.h"
 
 // Main function that runs the pacman game on the pi
@@ -20,7 +20,7 @@ int main(void){
 		cycles += 1;
 		// Win case; will make ghosts smarter and game faster.
 		if (gameWon()){
-			int counter = 0;
+			printf("User won game, game will speed up");
 			while(counter < 300){
 				genWinArray();
 				char received = sendCurrentGameArray(winArray);
@@ -31,24 +31,34 @@ int main(void){
 			randomness += 5;
 			waitTime -= 10;
 			ghostTimer = 0;
+			counter = 0;
 			initArray();
 		}
-
+		// Lose case. Will restart the game.
 		if (lives == 0){
-			win = 0;
-			break;
+			printf("User is out of lives, will reset game\n");
+			while(counter < 300){
+				char received = sendCurrentGameArray(loseArray);
+				counter += 1;
+			}
+			printf("Number of lives: %d\n", (int) lives);
+			lives = 6;
+			resetPacmanInfo();
+			resetGhostInfo();
+			ghostTimer = 0;
+			counter = 0;
+			initArray();
 		}
 
 		// Sends gameArray to FPGA, gets keypad data, updates pacman and ghost info, and resets ai array
 		char received = sendCurrentGameArray(gameArray);
 		getPacmanInfo(gameArray,received);
 		getGhostInfo(gameArray);
-		resetAIArray();
-
 		// If pacman is alive and cycles > wait time, then allow ghost and pacman movements for one cycle.
 		if (isAlive(gameArray)){
 			if (cycles > waitTime) {
 				cycles = 0;
+				resetAIArray();
 				//Game logic for pacman
 				if (ghostCanMove(ghostInfo)){
 					while ( updateAIArray(pacmanInfo.row,pacmanInfo.col) ){
@@ -62,8 +72,4 @@ int main(void){
 			}
 		}
     }
-    // Lose case. Must exit program and reset LED matrix to play again.
-	while(1){
-		char received = sendCurrentGameArray(loseArray);
-	}
 }
