@@ -47,6 +47,8 @@ int main(void){
 			resetGhostInfo();
 			ghostTimer = 0;
 			counter = 0;
+			waitTime = 25;
+			randomness = 2;
 			initArray();
 		}
 

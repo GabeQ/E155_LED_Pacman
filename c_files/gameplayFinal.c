@@ -34,7 +34,7 @@ int win;
 int waitTime = 25;
 int lives = 6;
 int ghostTimer = 0;
-int randomness = 5;
+int randomness = 2;
 int counter = 0;
 
 // Array with the eight chars that represent colors
